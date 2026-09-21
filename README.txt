@@ -88,6 +88,10 @@ Comprehensive validation of the σ values derived in `05a` and `05b`.
 
 ## Stage III - Core Analysis
 
+### `msd_core.py` is the shared MSD calculation module
+
+`msd_core.py` contains calculations of `msd()`, `_msd_iter()`, 'imsd()', per-particle localization sigma correction, power-law fitting, the bead noise-floor helpers (`compute_bead_noise_floor()`, `trajectory_above_noise_floor()`, `corrected_msd_series()`), and the `trajectory()` start-shifting helper used by several plotting scripts.
+
 Scripts in this stage follow a consistent `a` / `b` naming convention:  
 - **`a`** = DNA fragment size series (100 bp, 250 bp, 500 bp, 4713 bp, 7614 bp, 9553 bp) in CHO cells  
 - **`b`** = Cell type comparison (MDA-MB-231, MCF-7, MCF-10A) with ATP depletion comparison (on MDA-MB-231 cells)
